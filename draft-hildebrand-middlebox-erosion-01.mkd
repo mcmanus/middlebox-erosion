@@ -37,7 +37,7 @@ There are several middlebox use cases that typically stand in the way of better 
 * Network management and quality of service routing
 * Authorization and billing of network services
 
-These use cases may cause third parties to an otherwise end-to-end conversation to have legitimate legal and moral rights that grant them participation in the conversation.  This document discusses several reasons why the legitimacy of these use cases is undermined in the minds of some who build products for the Internet.
+These use cases may cause third parties to an otherwise end-to-end conversation to have legitimate legal and moral rights that grant them participation in the conversation.  This document discusses several reasons why the legitimacy of these use cases is undermined in the minds of some who build other products for the Internet.
 
 # Similarity to attacks
 
@@ -55,7 +55,9 @@ Even middleboxes that are operating correctly become design constraints that inh
 
 # Support cost appropriation
 
-When a middlebox subtly fails, end users never call the entity that deployed the middlebox, much less the vendor that built that box.  Indeed, the nature of a transparent middlebox makes it very difficult to even diagnose the error for a professional.  Instead, they file a support request with the services that they are trying to access.  The team that developed that service typically spends many hours finally tracking down the issue, only to finally find the problem with the middlebox.  The original end user never has the authority to fix the middlebox, so they demand the service owner work around the problem. Too often the result is that new technologies have to be abandoned because they are not backwards compatible with middlebox infrastructure that neither the end user nor service operator has direct control over.  This dynamic holds back Internet evolution.
+When a middlebox subtly fails, end users never call the entity that deployed the middlebox, much less the vendor that built that box.  Indeed, the nature of a transparent middlebox makes it very difficult to even diagnose the error for a professional.  Instead, they file a support request with the services that they are trying to access.
+
+The team that developed that service typically spends many hours finally tracking down the issue, only to finally find the problem with the middlebox.  The original end user never has the authority to fix the middlebox or even opt out of using it. Instead they demand the service owner work around the problem. The service implementor may not have any more control than the end user, so too often the result is that new technologies have to be abandoned because they are not backwards compatible with middlebox infrastructure that neither the end user nor service operator has direct control over.  This dynamic holds back Internet evolution.
 
 When the costs associated with broken behavior are not paid by the developers of that behavior, it is easy for those developers to assume that everyone is happy with their product.
 
